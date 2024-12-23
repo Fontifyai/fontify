@@ -40,7 +40,7 @@ const Navbar = () => {
         ))}
       </div>
       <div className='flex gap-5'>
-        <Button variant={"outline"} className="hover:border-2 w-20" onClick={() => router.push("/dashboard")}>
+        <Button variant={"outline"} className="hover:border-2 w-28" onClick={() => router.push("/dashboard")}>
           {/* Login */}
           Dashbaord
         </Button>

@@ -29,7 +29,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} ${poppins.className} antialiased font-poppins`}
       >
-        <ThemeProvider attribute={"class"} defaultTheme='system' enableSystem disableTransitionOnChange>
+        <ThemeProvider attribute={"class"} defaultTheme='light' enableSystem disableTransitionOnChange>
           <main>{children}</main>
         </ThemeProvider>
       </body>
