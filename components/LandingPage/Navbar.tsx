@@ -28,11 +28,11 @@ const Navbar = () => {
   const router = useRouter();
 
   return (
-    <div className='w-full py-5 px-16 border-b flex justify-between items-center'>
+    <div className='w-full py-5 md:px-16 px-4 border-b flex justify-between items-center'>
       <div>
         <Logo />
       </div>
-      <div className='flex text-sm gap-10'>
+      <div className='md:flex hidden text-sm gap-10'>
         {navLinks.map((link, index) => (
           <Link href={link.href} key={index}>
             {link.name}

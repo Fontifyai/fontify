@@ -5,7 +5,7 @@ import Lightdark from "@/components/LandingPage/light-dark";
 
 export default function page() {
   return (
-    <div className="grid md:grid-cols-3 grid-cols-1 gap-4">
+    <div className="grid md:grid-cols-3 grid-cols-1 md:gap-4">
       <Aside />
       <Output />
       <Lightdark />

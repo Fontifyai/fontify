@@ -44,11 +44,11 @@ const Hero = () => {
 
   return (
     <main className="min-h-screen py-32 space-y-7 flex flex-col items-center">
-      <div className="text-6xl font-bold">Generate your fonts</div>
+      <div className="md:text-6xl text-5xl text-center font-bold">Generate your fonts</div>
       <div className="flex gap-5 items-center">
-        <h2 className="text-5xl">with</h2>
+        <h2 className="md:text-5xl text-4xl">with</h2>
         <h2
-          className={`text-5xl transition-all w-40 duration-500 ease-in ${fontsFontify[activeIndex]}`}
+          className={`md:text-5xl text-4xl transition-all w-40 duration-500 ease-in ${fontsFontify[activeIndex]}`}
         >
           Fontify
         </h2>
@@ -60,11 +60,11 @@ const Hero = () => {
           and other font styles for designers, developers, and content creators.
         </h3>
       </div>
-      <div className="flex gap-5">
-        <Button className="w-32" onClick={() => router.push("/sign-in")}>
+      <div className="flex md:flex-row flex-col gap-5">
+        <Button className="md:w-32 w-full" onClick={() => router.push("/dashboard")}>
           Get Started
         </Button>
-        <Button variant={"outline"} className="hover:border-2 w-32">
+        <Button variant={"outline"} className="hover:border-2 md:w-32 w-full">
           Learn More
         </Button>
       </div>
