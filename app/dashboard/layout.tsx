@@ -1,14 +1,16 @@
-import Navbar from "@/components/dashboard/Navbar";
+export const metadata = {
+  title: "Fontify - AI Font Generator",
+  description: "Generate custom fonts using AI",
+};
 
-export default async function DashboardLayout({
+export default function RootLayout({
   children,
-}: Readonly<{ children: React.ReactNode }>) {
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <div className="p-4">
-        <Navbar />
-        <main>
-            {children}
-        </main>
+    <div>
+      <main>{children}</main>
     </div>
   );
 }

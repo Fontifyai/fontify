@@ -1,14 +1,14 @@
-import React from "react";
-import Aside from "./_components/Aside";
-import Output from "./_components/Output";
-import Lightdark from "@/components/LandingPage/light-dark";
+import Navbar from "@/components/dashboard/Navbar"
+import { FontGeneratorForm } from "./_components/FontGeneratorForm"
 
-export default function page() {
+export default function Home() {
   return (
-    <div className="grid md:grid-cols-3 grid-cols-1 md:gap-4">
-      <Aside />
-      <Output />
-      <Lightdark />
+    <div className="min-h-screen bg-background">
+      <Navbar />
+      <main className="container mx-auto">
+        <FontGeneratorForm />
+      </main>
     </div>
-  );
+  )
 }
+
